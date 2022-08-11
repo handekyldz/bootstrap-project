@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Daily Blog</title>
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container">
+      <!-- Home Icon  -->
+      <a href="index.html" class="navbar-brand">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <!-- Mobil Version Toggler Icon -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile">
+        <span class="navbar-toggler-icon"></span></button>
+
+      <div class="collapse navbar-collapse" id="mobile">
+        <!-- Home,BLogs,Contact Items -->
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- Search Area and Button -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn bg-warning" type="submit">
+            <i class="fa-solid fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <main>
+    <div class="container my-4">
+      <div class="row">
+        <!-- Category Start -->
+        <div class="col-3">
+          <div class="list-group rounded">
+            <a href="" class="list-group-item list-group-item-action">Category 1</a>
+            <a href="" class="list-group-item list-group-item-action">Category 2</a>
+            <a href="" class="list-group-item list-group-item-action">Category 3</a>
+          </div>
+        </div>
+        <!-- Category End -->
+        <div class="col-9">
+          <!-- Breadcrumb start -->
+          <nav>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active">Data</li>
+            </ol>
+          </nav>
+          <!-- Breadcrumb End -->
+
+          <!-- Cards Start -->
+          <div class="card my-4 shadow">
+            <div class="row">
+              <div class="col-md-4">
+                <img class="img-fluid rounded-start" src="img/1.jpeg" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title" >Title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Adipisci, ipsa! Sequi maiores, reiciendis corporis recusandae temporibus non voluptate 
+                     repudiandae hic, tempore minus enim optio odio facere quia sed nulla pariatur?
+                  </p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <div class="card my-4 shadow">
+            <div class="row">
+              <div class="col-4">
+                <img class="img-fluid rounded-start" src="img/2.jpeg" alt="">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title" >Title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Adipisci, ipsa! Sequi maiores, reiciendis corporis recusandae temporibus non voluptate 
+                     repudiandae hic, tempore minus enim optio odio facere quia sed nulla pariatur?
+                  </p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <div class="card my-4 shadow">
+            <div class="row">
+              <div class="col-4">
+                <img class="img-fluid rounded-start" src="img/3.jpeg" alt="">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title" >Title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Adipisci, ipsa! Sequi maiores, reiciendis corporis recusandae temporibus non voluptate 
+                     repudiandae hic, tempore minus enim optio odio facere quia sed nulla pariatur?
+                  </p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <!-- Pagination Start -->
+          <nav aria-label="...">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Pagination End -->
+        </div>
+      </div>
+    </div>
+    <!-- Footer Start -->
+<footer class="py-5 bg-dark text-white">
+  <div class="container text-center">
+      <span>All Rights Reserved @2025</span>
+  </div>
+</footer>
+<!-- Footer End -->
+  </main>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
